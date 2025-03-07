@@ -1,0 +1,17 @@
+{
+    "name": "admin/student-grade-api",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Admin\\StudentGradeApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Claudin Delima"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

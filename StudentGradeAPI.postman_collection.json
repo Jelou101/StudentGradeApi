@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "1f428b04-375e-4be8-a7f6-3127312c6441",
+		"name": "StudentGradeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42764879"
+	},
+	"item": [
+		{
+			"name": "Get All Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/StudentGradeAPI/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"StudentGradeAPI",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Student by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/StudentGradeAPI/api/students/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"StudentGradeAPI",
+						"api",
+						"students",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a New Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Claudin Delima\",\r\n  \"midterm_score\": 85,\r\n  \"final_score\": 90\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/StudentGradeAPI/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"StudentGradeAPI",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student Info",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Claudin Jelou Delima\",\r\n  \"midterm\": 88,\r\n  \"finals\": 92\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/StudentGradeAPI/api/student/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"StudentGradeAPI",
+						"api",
+						"student",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/StudentGradeAPI/api/students/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"StudentGradeAPI",
+						"api",
+						"students",
+						"101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
